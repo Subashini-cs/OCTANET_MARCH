@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="todo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<body>
+    <nav>
+        <a href="#" class="logo">Todo</a>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <div class="todo">
+            <div class="add-task">
+                <input type="text" class="addTask" placeholder="Add Task" />
+                <i class="fas fa-plus addBtn"></i>
+            </div>
+            <div class="add-task">
+                <input type="date" class="addDate" />
+            </div>
+            <div class="add-task">
+                <select class="priority">
+                    <option value="High">High</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Low">Low</option>
+                </select>
+            </div>
+            <div class="list-tasks"></div>
+            <div class="tasks-statis">
+                <div class="count"><span class="all-tasks">0</span> Tasks.</div>
+                <div class="completed">
+                    <span class="completed-tasks">0</span> Tasks completed.
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="todo2.js"></script>
+</body>
+</html>
